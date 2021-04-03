@@ -7,13 +7,11 @@ for(i = 0; i < 10; i++) {
     arr[i] = Math.round(Math.random(i)*100)
     arr1[i] = Math.round(Math.random(i)*100)
 }
-console.log(arr, arr1);
 
 // _____________________№_2__________________
 
-
 function con(array_1, array_2) {
-  let arr2 = arr.concat(arr1);
+  let arr2 = array_1.concat(array_2);
   arr2.push(22);
   console.log(arr2);
   let min = arr2[0];
@@ -31,20 +29,14 @@ function con(array_1, array_2) {
     
     for (let i = 0; i < arr2.length; i++) {
       if(arr2[i] % 2 == 0 ){
-        let arr3 = arr2[i]*2;
-        console.log(arr3);
+        arr2[i]*2;
+        console.log(arr2[i]);
       } 
     }  
     console.log(`minNumber: ${min}`); 
     console.log(`maxNumber: ${max}`);     
 }
-
-// почему-то выводит неправильное значение!!!
-
 // ________________№3__________________
-
-
-
 con(arr, arr1)
 
 
